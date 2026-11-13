@@ -2,7 +2,7 @@
 
 *[Deutsch](README.md)*
 
-An **SNMP agent** for [openccu-lite](https://github.com/hobbyquaker/openccu-lite): the standard MIBs of a Linux host
+An **SNMP agent** for [openccu-lite](https://github.com/openccu-lite/openccu-lite): the standard MIBs of a Linux host
 that LibreNMS, Zabbix, PRTG and Checkmk poll, and the **Homematic side** of the system in a tree of its own -
 interfaces with duty cycle and radio state, service messages, devices with reachability, battery and signal
 strength. Read-only, SNMPv3 with SHA-256 and AES by default.
@@ -43,7 +43,7 @@ strength. Read-only, SNMPv3 with SHA-256 and AES by default.
 - **Selections** decide which devices the device table lists: tick or exclude devices and channels, plus rules by
   interface, device type, channel type, datapoint (with wildcards: `LOW*`, `*_TEMPERATURE`), room and function. The
   editor shows live how many devices, channels and datapoints match. It is the same model and the same editor as in
-  [lite-addon-forwarder](https://github.com/hobbyquaker/lite-addon-forwarder).
+  [lite-addon-forwarder](https://github.com/openccu-lite/lite-addon-forwarder).
 - **No radio load:** the values come from the system's state store and event stream. An SNMP request reads only the
   agent's memory; the agent never calls `getValue` and never causes a radio transmission.
 - **Status:** requests per minute, the last sources with their credential, authentication failures, the state of
@@ -80,7 +80,7 @@ authUser log nms nms-inform
 ## Installation
 
 1. Install the package `snmp-<arch>-<version>.tar.gz` from the
-   [releases page](https://github.com/hobbyquaker/lite-addon-snmp/releases) through the system's Addons page. The
+   [releases page](https://github.com/openccu-lite/lite-addon-snmp/releases) through the system's Addons page. The
    addon is not in the catalogue for now.
 2. On the addon's page (*SNMP* in the addon menu, or *Settings* on the Addons page) add an SNMPv3 user under
    **Access**.

@@ -1,5 +1,5 @@
 <script lang="ts">
-    // Copied unchanged from github.com/hobbyquaker/lite-addon-forwarder ui/src/ChipInput.svelte at
+    // Copied unchanged from github.com/openccu-lite/lite-addon-forwarder ui/src/ChipInput.svelte at
     // commit 5c506f7.
     // A list of strings as chips: type and press Enter (or comma) to add, click × to remove,
     // or click a suggestion below to toggle it. Used for keys (with wildcards), rooms,

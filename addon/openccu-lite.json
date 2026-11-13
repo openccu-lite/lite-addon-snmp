@@ -7,9 +7,9 @@
     "en": "An SNMP agent (read-only, SNMPv3 with SHA-256/AES): the standard MIBs of a Linux host for LibreNMS, Zabbix, PRTG or Checkmk, and the Homematic side of the system in a tree of its own - interfaces and duty cycle, service messages, devices with reachability and battery, chosen with reusable selections; plus traps and informs on service messages, radio loss, high duty cycle, daemons and Status warnings."
   },
   "version": "0.2.0",
-  "homepage": "https://github.com/hobbyquaker/lite-addon-snmp",
+  "homepage": "https://github.com/openccu-lite/lite-addon-snmp",
   "licence": "MIT",
-  "changelog": "https://github.com/hobbyquaker/lite-addon-snmp/blob/main/CHANGELOG.md",
+  "changelog": "https://github.com/openccu-lite/lite-addon-snmp/blob/main/CHANGELOG.md",
   "release": {
     "github": "hobbyquaker/lite-addon-snmp",
     "asset": "snmp-{arch}-{version}.tar.gz"

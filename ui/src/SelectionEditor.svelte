@@ -1,5 +1,5 @@
 <script lang="ts">
-    // Copied from github.com/hobbyquaker/lite-addon-forwarder ui/src/SelectionEditor.svelte at
+    // Copied from github.com/openccu-lite/lite-addon-forwarder ui/src/SelectionEditor.svelte at
     // commit 5c506f7. lite-addon-snmp's two changes, both props whose defaults keep the forwarder's
     // behaviour: `devicesOnly` hides the kinds, sources, metric and log rules (the agent's tables
     // and notifications are about devices only and ignore them), and `showRecent` false hides the

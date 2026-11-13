@@ -2,7 +2,7 @@
 
 *[English](README.en.md)*
 
-Ein **SNMP-Agent** für [openccu-lite](https://github.com/hobbyquaker/openccu-lite): die Standard-MIBs eines
+Ein **SNMP-Agent** für [openccu-lite](https://github.com/openccu-lite/openccu-lite): die Standard-MIBs eines
 Linux-Hosts, die LibreNMS, Zabbix, PRTG und Checkmk abfragen, und die **Homematic-Seite** des Systems in einem
 eigenen Baum – Schnittstellen mit Duty Cycle und Funkzustand, Servicemeldungen, Geräte mit Erreichbarkeit, Batterie
 und Empfangsstärke. Nur lesend, SNMPv3 mit SHA-256 und AES als Standard.
@@ -44,7 +44,7 @@ und Empfangsstärke. Nur lesend, SNMPv3 mit SHA-256 und AES als Standard.
 - **Auswahlen** bestimmen, welche Geräte in der Gerätetabelle stehen: Geräte und Kanäle anhaken oder ausschließen,
   dazu Regeln nach Schnittstelle, Gerätetyp, Kanaltyp, Datenpunkt (mit Platzhaltern: `LOW*`, `*_TEMPERATURE`), Raum
   und Gewerk. Der Editor zeigt live, wie viele Geräte, Kanäle und Datenpunkte passen. Es ist dasselbe Modell und
-  derselbe Editor wie in [lite-addon-forwarder](https://github.com/hobbyquaker/lite-addon-forwarder).
+  derselbe Editor wie in [lite-addon-forwarder](https://github.com/openccu-lite/lite-addon-forwarder).
 - **Keine Funklast:** Die Werte kommen aus dem Zustandsspeicher und dem Ereignisstrom des Systems. Eine SNMP-Abfrage
   liest nur den Speicher des Agenten; der Agent ruft nie `getValue` auf und löst nie eine Funkübertragung aus.
 - **Status:** Anfragen pro Minute, die letzten Quellen mit Zugang, fehlgeschlagene Anmeldungen, der Zustand der
@@ -81,7 +81,7 @@ authUser log nms nms-inform
 
 ## Installation
 
-1. Das Paket `snmp-<arch>-<version>.tar.gz` von der [Releases-Seite](https://github.com/hobbyquaker/lite-addon-snmp/releases)
+1. Das Paket `snmp-<arch>-<version>.tar.gz` von der [Releases-Seite](https://github.com/openccu-lite/lite-addon-snmp/releases)
    über die Addons-Seite des Systems installieren. Das Addon steht vorerst nicht im Katalog.
 2. Auf der Addon-Seite (*SNMP* im Addon-Menü oder *Einstellungen* auf der Addons-Seite) unter **Zugang** einen
    SNMPv3-Benutzer anlegen.
