@@ -3,8 +3,8 @@
   "id": "snmp",
   "name": "SNMP",
   "description": {
-    "de": "Ein SNMP-Agent (nur lesend, SNMPv3 mit SHA-256/AES): die Standard-MIBs eines Linux-Hosts für LibreNMS, Zabbix, PRTG oder Checkmk und die Homematic-Seite des Systems in einem eigenen Baum – Schnittstellen und Duty Cycle, Servicemeldungen, Geräte mit Erreichbarkeit und Batterie, ausgewählt über wiederverwendbare Auswahlen; dazu Traps und Informs bei Servicemeldungen, Funkausfall, hohem Duty Cycle, Dienst- und Statuswarnungen.",
-    "en": "An SNMP agent (read-only, SNMPv3 with SHA-256/AES): the standard MIBs of a Linux host for LibreNMS, Zabbix, PRTG or Checkmk, and the Homematic side of the system in a tree of its own - interfaces and duty cycle, service messages, devices with reachability and battery, chosen with reusable selections; plus traps and informs on service messages, radio loss, high duty cycle, daemons and Status warnings."
+    "de": "Ein SNMP-Agent (nur lesend, SNMPv3 mit SHA-256/AES)",
+    "en": "An SNMP agent (read-only, SNMPv3 with SHA-256/AES)"
   },
   "version": "0.2.0",
   "homepage": "https://github.com/openccu-lite/lite-addon-snmp",
@@ -31,8 +31,8 @@
     "port_info": {"161": {"proto": "udp", "label": {"de": "SNMP-Agent", "en": "SNMP agent"}}},
     "api_scopes": ["rpc:read", "meta:read", "system:read"],
     "note": {
-      "de": "Bindet UDP-Port 161 (dafür CAP_NET_BIND_SERVICE, sonst kein Recht). Liest Geräteliste, Gerätebeschreibungen, Zustandsspeicher und Ereignisstrom der Schnittstellen, Namen, Räume und Gewerke aus den Metadaten sowie Funkzustand, Servicemeldungen und Statuswarnungen des Systems; löst nie eine Funkübertragung aus. Beantwortet SNMP-Abfragen nur lesend und sendet Traps nur an die Ziele, die Sie einrichten; keine anderen Verbindungen nach außen. Der Port ist geschlossen, bis Sie ihn öffnen.",
-      "en": "Binds UDP port 161 (hence CAP_NET_BIND_SERVICE, no other privilege). Reads the device lists, the device descriptions, the state store and the event stream of the interfaces, the names, rooms and functions from the metadata, and the system's radio health, service messages and Status warnings; never causes a radio transmission. Answers SNMP queries read-only and sends traps only to the targets you set up; no other outgoing connections. The port is closed until you open it."
+      "de": "Verfügbar sind die Standard-MIBs eines Linux-Servers (Netzwerk, Speicher, Dateisysteme, Prozessoren, Last), dazu in einem eigenen Baum die Homematic-Seite: Schnittstellen und Duty Cycle, Servicemeldungen und die Geräte mit Erreichbarkeit und Batterie. Die MIB dazu (LITE-SNMP-MIB) gibt es zum Download auf der Seite des Addons und in jedem Release. Traps und Informs meldet es bei Servicemeldungen, Funkausfall, hohem Duty Cycle sowie Dienst- und Statuswarnungen.",
+      "en": "Available are the standard MIBs of a Linux server (network, memory, file systems, processors, load), plus, in a tree of its own, the Homematic side: interfaces and duty cycle, service messages and the devices with reachability and battery. The matching MIB (LITE-SNMP-MIB) can be downloaded on the addon's page and from every release. It sends traps and informs on service messages, radio loss, high duty cycle, and daemon and Status warnings."
     }
   }
 }
